@@ -6,13 +6,13 @@
 
 /* Menu Superior general*/
 
-nav{
-    background-color:rgb(249, 41, 107);
+.container-fluid{
+    background-color:rgb(252, 106, 152);
     padding: 1rem;
     font-size:medium;
     border-radius: 5px;
-    margin-top: 20px;
-
+    margin-top: 0px;
+    margin-bottom: 0%;
 }
     .menuSuperior li{
     display: inline;
@@ -24,6 +24,10 @@ nav{
         font-size:medium;
     }
     
+    headrer{
+        margin: 0%;
+    }
+
     /* Ajustes de imagen en INDEX */
 
 h1{
@@ -31,6 +35,8 @@ h1{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size:x-large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
     .apresentacao{
         list-style: none;
@@ -41,11 +47,12 @@ h1{
 .kali{
     width: 400px;
     height: 600px;
-    margin: 2rem;   
+    margin: 1rem;   
 }
 
 body {
-    background-color: rgb(235, 228, 228);
+    background-color: rgb(251, 247, 247);
+    
 }
 
 /*footer general*/
@@ -54,8 +61,9 @@ footer{
     background-color: rgb(52, 53, 54);
     display:flex;
     justify-content: space-around;
-    border-radius: 5px;
     margin-top: 2rem;
+    margin-bottom: 0%;
+    
 }
 
 /* Menu Inferior general */
@@ -65,28 +73,20 @@ footer{
     display: flex;
     justify-content: space-around;
     }
+
     .menuInferior a{
         background-color: rgb(52, 53, 54);
         color: blanchedalmond;
-        padding: 1rem;
-        font-size:x-small;
+        padding: 5px;
+        font-size:small;
         list-style-type: none;
         display: flex;
         justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 0%;
+        
      }
 
-/*--------------------Pagina Contato - H1-----------------------*/
-
-     .contato{
-        text-align: center;
-        margin: 2rem;
-     }
-
-/*Pagina Contato - Formulario*/
-
-     form{
-        text-align: center;
-     }
 
 /*----------------------Pagina Sobre-----------------------------*/
     
@@ -94,7 +94,7 @@ footer{
 
 .kali_sobre{
 width: 400px;
-margin: 1rem 0 2rem 0;
+margin: 5rem 0 2rem 0;
 border-radius: 5px;
 
 }
@@ -122,15 +122,9 @@ border-radius: 5px;
 
 .bio{
     grid-area: bio;
-    background-color: rgb(168, 242, 244);
-    border-radius: 3px;
-    margin: 1rem 10rem 1rem 0rem;
-    padding: 50px;
-    border: solid 15px;
-    border-color: whitesmoke;
+    margin: 3rem 10rem 0rem 0rem;
+    padding: 50px;  
 }
-
-
 
 .promo{
     grid-area: promo;
@@ -145,7 +139,7 @@ border-radius: 5px;
 }
 
 .cuerpo{
-    background-color: rgb(188, 240, 242);
+    background-color: rgb(255, 255, 255);
 }
 
 /*--------- Final de GRIDS y Estructura -------*/
@@ -165,6 +159,54 @@ p{
     margin-bottom: 2px;
 }
 
+/*----------------------Pagina Portifólio-----------------------------*/
+
+/*---Inicio de Ajustes de imagen---*/
+
+.carousel{
+width: 400px;
+border-radius: 5px;
+display: inline-flex;
+flex-direction: row;
+justify-content: center;
+margin: 1rem;
+}
+
+/*---Final de Ajustes de imagen---*/
+
+/*---Inicio de Ajustes de texto---*/
+.texto_portifolio{
+    text-align: center;
+    font-size: xx-large;
+    margin-right: 8rem;
+}
+/*---Final de Ajustes de texto---*/
+
+/*--------------------Pagina Contato-----------------------*/
+
+.contato{
+    text-align: center;
+    margin: 2rem;
+ }
+
+/* Formulario*/
+.secao{
+  width: 500px;  
+  margin: auto;
+}
+
+.form-group{
+    display: flex;
+flex-direction: column;
+margin: 1rem;
+width: 500px;
+ }
+
+ .botao{
+    text-align: center;
+    margin-bottom: 6rem;
+ }
+ 
 /*----------------------Pagina BLOG-----------------------------*/
 
 /*--------- GRIDS y Estructura -------*/
@@ -229,7 +271,9 @@ margin: 2rem;
     display: flex;
     justify-content: center;
 }
-
+.conteudo{
+    margin-top: 2rem;
+}
 /*-------- Inicio Ajuste Texto -------*/
 
 .texto_blog{
