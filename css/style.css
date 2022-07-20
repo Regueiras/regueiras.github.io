@@ -317,3 +317,36 @@ margin-right: 4rem;
         margin-left: 6rem;
     }
 }
+
+/*test*/
+.capa{
+    background: url(../img/guill.png);
+    background-size: cover;
+    opacity: 80%;
+    
+}
+#navegacao{
+    background-color: #fff;
+    opacity: 40%;
+   
+}
+#navegacao:hover{
+    opacity: 90%;
+    transition: 1.5s;
+}
+#navbarNav{
+    display: inline;
+    justify-content: space-around;
+    padding: 1rem;
+    
+}
+
+.centro{
+    margin-top: 18rem;
+}
+.nav-link{
+    font-size: x-large;
+    color: #cc2649;
+margin-left: 5rem;
+margin-right: 8rem;
+}
