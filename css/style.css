@@ -1,321 +1,232 @@
+@charset "UTF-8";
+@import url(_variables.scss);
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0; }
+
 /*-------------- INDEX y Ajuste General---------------*/
-
 /* Menu Superior general*/
+.container-fluid {
+  background-color: #fc6a98;
+  padding: 1rem;
+  font-size: medium;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 0%; }
 
-.container-fluid{
-    background-color:rgb(252, 106, 152);
-    padding: 1rem;
-    font-size:medium;
-    border-radius: 5px;
-    margin-top: 0px;
-    margin-bottom: 0%;
-}
-    .menuSuperior li{
-    display: inline;
-    }
-    
-    .menuSuperior a{
-        color: blanchedalmond;
-        padding: 1rem;
-        font-size:medium;
-    }
-    
-    headrer{
-        margin: 0%;
-    }
+/* Ajustes de imagen en INDEX */
+h1 {
+  margin: 2rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
-    /* Ajustes de imagen en INDEX */
+.apresentacao {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
 
-h1{
-    margin: 2rem;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size:x-large;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-    .apresentacao{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    
-    }
-.kali{
-    width: 400px;
-    height: 600px;
-    margin: 1rem;   
-}
+.kali {
+  width: 400px;
+  height: 600px;
+  margin: 1rem; }
 
 body {
-    background-color: rgb(251, 247, 247);
-    
-}
+  background-color: #fbf7f7; }
 
 /*footer general*/
-
-footer{
-    background-color: rgb(52, 53, 54);
-    display:flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 0%;
-    
-}
+footer {
+  background-color: #343536;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 0%; }
 
 /* Menu Inferior general */
+.menuInferior {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; }
 
-.menuInferior{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    }
-
-    .menuInferior a{
-        background-color: rgb(52, 53, 54);
-        color: blanchedalmond;
-        padding: 5px;
-        font-size:small;
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 0%;
-        
-     }
-
+.menuInferior a {
+  background-color: #343536;
+  color: blanchedalmond;
+  padding: 5px;
+  font-size: small;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 0%; }
 
 /*----------------------Pagina Sobre-----------------------------*/
-    
 /*Ajustes de Imagen*/
+.kali_sobre {
+  width: 400px;
+  margin: 5rem 0 2rem 0;
+  border-radius: 5px; }
 
-.kali_sobre{
-width: 400px;
-margin: 5rem 0 2rem 0;
-border-radius: 5px;
-
-}
 /*Final de Ajustes de Imagen*/
-
 /*--------- GRIDS y Estructura -------*/
+.grid {
+  display: grid;
+  grid-template-areas: "menu menu menu" "vazio promo bio" "baixo baixo baixo";
+  grid-template-rows: 80px;
+  grid-template-columns: 5% 30% auto;
+  grid-column-gap: 30px; }
 
-.grid{
-    display:grid;
-    grid-template-areas:
-    "menu menu menu"
-    "vazio promo bio"
-    "baixo baixo baixo";
+.menu {
+  grid-area: menu; }
 
-    grid-template-rows: 80px;
-    grid-template-columns: 5% 30% auto;
-    grid-column-gap: 30px;
+.bio {
+  grid-area: bio;
+  margin: 3rem 10rem 0rem 0rem;
+  padding: 50px; }
 
+.promo {
+  grid-area: promo; }
 
-}
+.baixo {
+  grid-area: baixo; }
 
-.menu{
-    grid-area: menu; 
-}
+.vazio {
+  grid-area: vazio; }
 
-.bio{
-    grid-area: bio;
-    margin: 3rem 10rem 0rem 0rem;
-    padding: 50px;  
-}
-
-.promo{
-    grid-area: promo;
-
-}
-
-.baixo{
-    grid-area: baixo;
-}
-.vazio{
-    grid-area: vazio;
-}
-
-.cuerpo{
-    background-color: rgb(255, 255, 255);
-}
+.cuerpo {
+  background-color: white; }
 
 /*--------- Final de GRIDS y Estructura -------*/
-
 /*---Inicio de Ajustes de texto---*/
+.titulo_sobre {
+  font-size: 40px;
+  margin-bottom: 2rem; }
 
-.titulo_sobre{
-font-size: 40px;
-margin-bottom: 2rem;
-}
-
-p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium;
-    padding: 1px;
-    text-align: center;
-    margin-bottom: 2px;
-}
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+  padding: 1px;
+  text-align: center;
+  margin-bottom: 2px; }
 
 /*----------------------Pagina Portifólio-----------------------------*/
-
 /*---Inicio de Ajustes de imagen---*/
-
-.carousel{
-width: 400px;
-border-radius: 5px;
-display: inline-flex;
-flex-direction: row;
-justify-content: center;
-margin: 1rem;
-}
+.carousel {
+  width: 400px;
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem; }
 
 /*---Final de Ajustes de imagen---*/
-
 /*---Inicio de Ajustes de texto---*/
-.texto_portifolio{
-    text-align: center;
-    font-size: xx-large;
-    margin-right: 8rem;
-}
+.texto_portifolio {
+  text-align: center;
+  font-size: xx-large;
+  margin-right: 8rem; }
+
 /*---Final de Ajustes de texto---*/
-
 /*--------------------Pagina Contato-----------------------*/
-
-.contato{
-    text-align: center;
-    margin: 2rem;
- }
+.contato {
+  text-align: center;
+  margin: 2rem; }
 
 /* Formulario*/
-.secao{
-  width: 500px;  
-  margin: auto;
-}
+.secao {
+  width: 500px;
+  margin: auto; }
 
-.form-group{
-    display: flex;
-flex-direction: column;
-margin: 1rem;
-width: 500px;
- }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 500px; }
 
- .botao{
-    text-align: center;
-    margin-bottom: 6rem;
- }
- 
+.botao {
+  text-align: center;
+  margin-bottom: 6rem; }
+
 /*----------------------Pagina BLOG-----------------------------*/
-
 /*--------- GRIDS y Estructura -------*/
+.grid_dois {
+  display: grid;
+  grid-template-areas: "menus menus menus" "pesquisa conteudo vazio" "baixo baixo baixo";
+  grid-template-rows: 80px;
+  grid-template-columns: 20% 50% auto;
+  grid-column-gap: 30px; }
 
-.grid_dois{
-    display:grid;
-    grid-template-areas:
-    "menus menus menus"
-    "pesquisa conteudo vazio"
-    "baixo baixo baixo";
-    grid-template-rows: 80px;
-    grid-template-columns: 20% 50% auto;
-    grid-column-gap: 30px;
-}
+.menu_dois {
+  grid-area: menus; }
 
-.menu_dois{
-    grid-area: menus;
-}
-.pesquisa{
-    grid-area: pesquisa;
-}
-.conteudo{
-    grid-area: conteudo;
-}
-.vazio{
-    grid-area: vazio;
-}
-.baixo{
-    grid-area: baixo;}
+.pesquisa {
+  grid-area: pesquisa; }
+
+.conteudo {
+  grid-area: conteudo; }
+
+.vazio {
+  grid-area: vazio; }
+
+.baixo {
+  grid-area: baixo; }
 
 /*--------Final Grid--------------------*/
-
 /*-------- Inicio Caja de Pesquisa-------*/
+.search_box {
+  background-color: #fff;
+  height: 40px;
+  padding: 10px;
+  border-radius: 40px;
+  position: absolute;
+  margin-top: 5%; }
 
-.search_box{
-    background-color: #fff;
-    height:40px;
-   padding: 10px;
-   border-radius: 40px;
-   position:absolute;
-   margin-top: 5%;
- 
-}
-.search_text{
-margin: 2rem;
-    border:0;
-    background: none;
-    outline: 0;
-    font-size: 14px;
-    
-}
-.lupa_azul{
-    width: 25px;
-    height: 25px;
-}
+.search_text {
+  margin: 2rem;
+  border: 0;
+  background: none;
+  outline: 0;
+  font-size: 14px; }
+
+.lupa_azul {
+  width: 25px;
+  height: 25px; }
 
 /*-------- Final Caja de Pesquisa-------*/
-
 /*-------- Ajuste de imagen-------*/
-.kali{
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-}
-.conteudo{
-    margin-top: 2rem;
-}
+.kali {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center; }
+
+.conteudo {
+  margin-top: 2rem; }
+
 /*-------- Inicio Ajuste Texto -------*/
+.texto_blog {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  margin-right: 4rem; }
 
-.texto_blog{
-font-size: 40px;
-margin-bottom: 1rem;
-margin-right: 4rem;
-}
-
-.txt_blog{
-   text-align: left;
-    padding: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
+.txt_blog {
+  text-align: left;
+  padding: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem; }
 
 /*-------- Final Ajuste Texto -------*/
-
 /*-----------------Media Mobile--------------*/
-
-
-@media  (max-width: 600px) {
-    body{
-        background-color: rgb(169, 220, 244);
-       
-    }
-
-    
-    .conteudo{
-        margin-top: 6rem;
-    }
-    .grid{
-        display: flex;
-        flex-direction: column;
-       
-    }
-    .promo{
-        margin-top: 3rem;
-        margin-left: 4rem;
-    }
-    .bio{
-        margin-left: 6rem;
-    }
-}
-
-
+@media (max-width: 600px) {
+  body {
+    background-color: #a9dcf4; }
+  .conteudo {
+    margin-top: 6rem; }
+  .grid {
+    display: flex;
+    flex-direction: column; }
+  .promo {
+    margin-top: 3rem;
+    margin-left: 4rem; }
+  .bio {
+    margin-left: 6rem; } }
