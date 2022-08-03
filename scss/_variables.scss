@@ -1,2 +1,11 @@
-$color-footer:rgb(52, 53, 54);
-$color-body:rgb(251, 247, 247);
+
+$colors:(
+    rodape: rgb(52, 53, 54),
+    corpo: rgb(251, 247, 247),
+    font_primaria: rgb(204, 38, 73),
+    font_texto: #343536,
+)
+
+@function; c($color) {
+    @return map-get($colors, $color);
+}

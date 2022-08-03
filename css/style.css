@@ -6,13 +6,53 @@
 
 /*-------------- INDEX y Ajuste General---------------*/
 /* Menu Superior general*/
-.container-fluid {
-  background-color: #fc6a98;
+#capa{
+  background-image: url(../img/guill.png);
+  background-size: cover;
+}
+.capa{
+  background: url(../img/guill.png);
+  background-size: cover;
+  opacity: 80%;
+  
+}
+#navegacao{
+  background-color: #fff;
+  opacity: 40%;
+ 
+}
+#navegacao:hover{
+  opacity: 90%;
+  transition: 1.5s;
+}
+#navbarNav{
+  display: inline;
+  justify-content: space-around;
   padding: 1rem;
+
+}
+
+.centro{
+  margin-top: 18rem;
+}
+.nav-links{
+  font-size: x-large;
+  color: #cc2649;
+margin-left: 5rem;
+margin-right: 8rem;
+text-decoration-line: none;
+
+}
+
+.container-fluid {
+  background-color: #cc2649;
+  padding: 5px;
   font-size: medium;
   border-radius: 5px;
   margin-top: 0px;
-  margin-bottom: 0%; }
+  margin-bottom: 0%; 
+}
+  
 
 /* Ajustes de imagen en INDEX */
 h1 {
@@ -62,17 +102,25 @@ footer {
   margin-bottom: 0%; }
 
 /*----------------------Pagina Sobre-----------------------------*/
-/*Ajustes de Imagen*/
+/*Ajustes de Imagen y texto*/
 .kali_sobre {
   width: 400px;
   margin: 5rem 0 2rem 0;
   border-radius: 5px; }
-
+  .media-body{
+    text-align: center;
+  }
+  .media-bd{
+    text-align: left;
+    font-size: small;
+  }
 /*Final de Ajustes de Imagen*/
 /*--------- GRIDS y Estructura -------*/
 .grid {
   display: grid;
-  grid-template-areas: "menu menu menu" "vazio promo bio" "baixo baixo baixo";
+  grid-template-areas: "menu menu menu"
+ "vazio promo bio"
+ "baixo baixo baixo";
   grid-template-rows: 80px;
   grid-template-columns: 5% 30% auto;
   grid-column-gap: 30px; }
@@ -82,11 +130,13 @@ footer {
 
 .bio {
   grid-area: bio;
-  margin: 3rem 10rem 0rem 0rem;
+  margin-top: 2rem;
   padding: 50px; }
 
 .promo {
-  grid-area: promo; }
+  grid-area: promo; 
+  
+}
 
 .baixo {
   grid-area: baixo; }
@@ -94,8 +144,10 @@ footer {
 .vazio {
   grid-area: vazio; }
 
-.cuerpo {
-  background-color: white; }
+
+
+  
+
 
 /*--------- Final de GRIDS y Estructura -------*/
 /*---Inicio de Ajustes de texto---*/
@@ -113,20 +165,48 @@ p {
 /*----------------------Pagina Portifólio-----------------------------*/
 /*---Inicio de Ajustes de imagen---*/
 .carousel {
-  width: 400px;
-  border-radius: 5px;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem; }
+  width: 600px;
+  margin: auto;
+  }
+
+  .videos{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem; 
+    margin-bottom: 4rem;
+  }
+
+  .d-inline-block{
+    border-radius: 50px;
+    margin-left: 2rem;
+  }
 
 /*---Final de Ajustes de imagen---*/
 /*---Inicio de Ajustes de texto---*/
 .texto_portifolio {
   text-align: center;
-  font-size: xx-large;
-  margin-right: 8rem; }
+  font-size: 70px;
+  margin-right: 5rem; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+
+.descricao_card{
+  color:#fff;
+  background-color: #343536;
+  font-size: small;
+}
+h5{
+  color:#fff;
+  text-decoration: solid;
+  background-color: #f3849c;
+  border-radius: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-title{
+  color:#f0f3f5;
+  background-color: #0e375e;
+}
 /*---Final de Ajustes de texto---*/
 /*--------------------Pagina Contato-----------------------*/
 .contato {
@@ -148,11 +228,25 @@ p {
   text-align: center;
   margin-bottom: 6rem; }
 
+ 
+ .cartoes{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+margin: 5px;
+ 
+ }
+ .card{
+  margin: 5px;
+ }
 /*----------------------Pagina BLOG-----------------------------*/
 /*--------- GRIDS y Estructura -------*/
 .grid_dois {
   display: grid;
-  grid-template-areas: "menus menus menus" "pesquisa conteudo vazio" "baixo baixo baixo";
+  grid-template-areas: "menus menus menus"
+ "pesquisa conteudo vazio"
+ "baixo baixo baixo";
   grid-template-rows: 80px;
   grid-template-columns: 20% 50% auto;
   grid-column-gap: 30px; }

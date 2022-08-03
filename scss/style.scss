@@ -8,9 +8,42 @@
 
 /* Menu Superior general*/
 
+.capa{
+  background: url(../img/guill.png);
+  background-size: cover;
+  opacity: 80%;
+  
+}
+#navegacao{
+  background-color: #fff;
+  opacity: 40%;
+ 
+}
+#navegacao:hover{
+  opacity: 90%;
+  transition: 1.5s;
+}
+#navbarNav{
+  display: inline;
+  justify-content: space-around;
+  padding: 1rem;
+  
+}
+
+.centro{
+  margin-top: 18rem;
+}
+.nav-links{
+  font-size: x-large;
+  color: color(font_primaria);
+margin-left: 5rem;
+margin-right: 8rem;
+text-decoration-line: none;
+}
+
 .container-fluid{
-    background-color:rgb(252, 106, 152);
-    padding: 1rem;
+    background-color:color(font_primaria);
+    padding: 5px;
     font-size:medium;
     border-radius: 5px;
     margin-top: 0px;
@@ -29,27 +62,17 @@ h1{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-    .apresentacao{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    
-    }
-.kali{
-    width: 400px;
-    height: 600px;
-    margin: 1rem;   
-}
+  
 
 body {
-    background-color: $color-body;
+    background-color: color(corpo);
     
 }
 
 /*footer general*/
 
 footer{
-    background-color: $color-footer;
+    background-color: color(rodape);
     display:flex;
     justify-content: space-around;
     margin-top: 2rem;
@@ -68,7 +91,7 @@ footer{
     }
 
     .menuInferior a{
-        background-color: $color-footer;
+        background-color: color(rodape);
         color: blanchedalmond;
         padding: 5px;
         font-size:small;
