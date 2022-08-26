@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0; }
 
+  html, body{
+    height: 100%;
+}
 /*-------------- INDEX y Ajuste General---------------*/
 /* Menu Superior general*/
 #capa{
@@ -73,6 +76,7 @@ h1 {
   height: 600px;
   margin: 1rem; }
 
+  
 body {
   background-color: #fbf7f7; }
 
@@ -80,9 +84,12 @@ body {
 footer {
   background-color: #343536;
   display: flex;
+  flex-shrink: 0;
   justify-content: space-around;
   margin-top: 2rem;
-  margin-bottom: 0%; }
+  margin-bottom: 0%;
+ }
+
 
 /* Menu Inferior general */
 .menuInferior {
@@ -240,80 +247,58 @@ margin: 5px;
  .card{
   margin: 5px;
  }
+ /* footer*/
+ .rodape{
+  clear: both;
+    position: absolute; /*Força o rodapé sempre para o fim da página*/
+    bottom: 0;          /*Força o rodapé sempre para o fim da página*/
+    width: 100%;
+ }
 /*----------------------Pagina BLOG-----------------------------*/
-/*--------- GRIDS y Estructura -------*/
-.grid_dois {
-  display: grid;
-  grid-template-areas: "menus menus menus"
- "pesquisa conteudo vazio"
- "baixo baixo baixo";
-  grid-template-rows: 80px;
-  grid-template-columns: 20% 50% auto;
-  grid-column-gap: 30px; }
 
-.menu_dois {
-  grid-area: menus; }
 
-.pesquisa {
-  grid-area: pesquisa; }
 
-.conteudo {
-  grid-area: conteudo; }
-
-.vazio {
-  grid-area: vazio; }
-
-.baixo {
-  grid-area: baixo; }
-
-/*--------Final Grid--------------------*/
-/*-------- Inicio Caja de Pesquisa-------*/
-.search_box {
-  background-color: #fff;
-  height: 40px;
-  padding: 10px;
-  border-radius: 40px;
-  position: absolute;
-  margin-top: 5%; }
-
-.search_text {
+.img-thumbnail{
+  width: 500px;
   margin: 2rem;
-  border: 0;
-  background: none;
-  outline: 0;
-  font-size: 14px; }
+}
 
-.lupa_azul {
-  width: 25px;
-  height: 25px; }
+.texto_blogs{
+  margin:1rem;
+  width: 700px;
+  text-indent: 100px;
+  
+}
 
-/*-------- Final Caja de Pesquisa-------*/
-/*-------- Ajuste de imagen-------*/
-.kali {
-  border-radius: 15px;
-  display: flex;
-  justify-content: center; }
+.cuerpo {
+  background-color: #cc2649;
+}
 
-.conteudo {
-  margin-top: 2rem; }
+.col{
+  margin: 3rem;
+}
 
-/*-------- Inicio Ajuste Texto -------*/
-.texto_blog {
-  font-size: 40px;
-  margin-bottom: 1rem;
-  margin-right: 4rem; }
+#img_blog{
+  border-radius: 20px;
+  border-style: double;
+  border-color: white;
+  width: 500px;
+}
 
-.txt_blog {
-  text-align: left;
-  padding: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem; }
+.navbar_blog{
+  margin-left: 10rem;
+  margin-top: 2rem;
+  width: 200px;
+}
+
+#rodape_blog{
+  
+}
 
 /*-------- Final Ajuste Texto -------*/
 /*-----------------Media Mobile--------------*/
 @media (max-width: 600px) {
-  body {
-    background-color: #a9dcf4; }
+  
   .conteudo {
     margin-top: 6rem; }
   .grid {
